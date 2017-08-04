@@ -1,0 +1,342 @@
+ *, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+body,
+html {
+	font-family: 'librebaskerville', sans-serif;
+	color: #384047;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+/*** Body ***/
+
+.wrapper {
+	position: fixed;
+	width: 100%;
+	color: black;
+    background-color: #eddee1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.title {
+	font-size: 30px;
+	font-family: "Avenir", 'librebaskerville';
+	
+}
+
+.intro {
+	margin-top: 0 auto;
+	margin-bottom: 30px;
+	padding: 100px 20px 10px 20px;
+	width: 100%;
+}
+
+h2 {
+	margin: 40px 0 10px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: black;
+}
+
+.intro-text {
+	padding-top: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #8a97a0;
+	font-weight: 300;
+}
+
+.big {
+	margin-top: 12px;
+	margin-bottom: 2px;
+    border: 2.5px solid #2d3945;
+}
+
+.small {
+	border-bottom: 1px solid #2d3945;
+	margin: 0;
+
+}
+
+/*** Form ***/
+
+form {
+	margin: 0 auto;
+	padding: 5px 10px 10px 10px;
+	background: #fbfbf4;
+}
+
+.contact-title {
+	margin-bottom: 15px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="city"],
+input[type="state"],
+input[type="zipcode"],
+textarea,
+select {
+	background: rgba(255,255,255,0.1);
+	border: none;
+	font-size: 1.1em;
+	height: auto;
+	margin: 0;
+	outline: none;
+	padding: 15px;
+	width: 100%;
+	background-color: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+	font-style: italic;
+	text-align: right;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+#state {
+	font-size: 12px;
+	color: #8a97a0;
+	font-style: italic;
+}
+
+#zipcode {
+	width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0 4px 8px 0;
+}
+
+select {
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+fieldset {
+	margin: 35px 0 0;
+	border: none;
+}
+
+legend {
+	font-size: 16px;	
+	margin-bottom: 8px;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+.contact {
+	border-bottom: 2px solid #2d3945;
+}
+
+.contact label {
+	margin-top: 15px;
+	overflow: hidden;
+	font-weight: 300;
+}
+
+label {
+	display: block;
+	margin-bottom: 3px;
+	padding: 5px 10px 10px 0;
+	color: black;
+    font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.newsletter-info {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: black;
+	font-weight: 300;
+}
+
+.news-format {
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+button {
+	padding: 19px 39px 18px 39px;
+	color: black;
+	background-color: #eddee1;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	font-style: black;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #eddee1;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+button:hover {
+	opacity: 0.75;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	color: #384047;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+/**** Styling Checkboxes and Radio ****/
+
+.radio label,
+.checkbox label {
+	padding-left: 25px;
+	margin-right: 15px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+.radio label:before,
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  background-color: #eedde1;
+}
+
+.radio label:before {
+	border-radius: 8px;
+}
+
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #46698b;
+  font-size: 30px;
+  text-align: center;
+  line-height: 15px;
+  border: 2px solid #46698b;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.checkbox label:before {
+  border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  font-family: arial;
+  font-size: 16px;
+  color: #46698b;
+  text-align: center;
+  line-height: 15px;
+  border: 2px solid #46698b;
+}
+
+
+
+/**** Media Queries ****/
+
+@media screen and (min-width: 760px) {
+
+.intro {
+	max-width: 600px;
+	margin: auto;
+}
+
+.intro-text {
+	margin-bottom: 20px;
+}
+
+.contact,
+.newsletter,
+button {
+	display: block;
+	margin: 2em auto;
+	max-width: 600px;
+}
+
+#zipcode {
+	width: 33%;
+}
+
+.contact label {
+	margin: auto 0;
+	float: left;
+	width: 25%;
+	clear: both;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="city"],
+input[type="state"],
+select {
+	
+	width: 75%;
+}
+
+.contact-title {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
